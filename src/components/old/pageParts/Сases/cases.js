@@ -1,7 +1,7 @@
 const cases = [
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,
@@ -12,7 +12,7 @@ const cases = [
   },
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,
@@ -23,7 +23,7 @@ const cases = [
   },
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,
@@ -34,7 +34,7 @@ const cases = [
   },
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,
@@ -45,7 +45,7 @@ const cases = [
   },
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,
@@ -56,7 +56,7 @@ const cases = [
   },
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,
@@ -70,7 +70,7 @@ const cases = [
 const topCases = [
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,
@@ -81,7 +81,7 @@ const topCases = [
   },
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,
@@ -92,7 +92,7 @@ const topCases = [
   },
   {
     title: "Название кейса",
-    image: "/images/old/case-item-example.jpg",
+    image: "/images/old/cases/case-item-example.jpg",
     country: false,
     fullInformation: false,
     dataCreated: false,

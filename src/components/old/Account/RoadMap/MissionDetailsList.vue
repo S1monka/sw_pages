@@ -2,8 +2,8 @@
   <div class="list" ref="list">
     <div
       class="list-item"
-      :class="{active: currentIndex== index}"
-      v-for="(item,index) in list"
+      :class="{ active: currentIndex == index }"
+      v-for="(item, index) in list"
       :key="`item_${item.id}`"
     >
       <div class="title" @click="getData(index)">
@@ -13,13 +13,22 @@
         <input
           v-if="editId == item.id"
           @blur="editId = -1"
-          @keyup.enter="() => {editId = -1; item.name = $event.target.value }"
+          @keyup.enter="
+            () => {
+              editId = -1;
+              item.name = $event.target.value;
+            }
+          "
           :value="item.name"
           ref="input"
         />
-        <p v-else>{{item.name}}</p>
+        <p v-else>{{ item.name }}</p>
       </div>
-      <options class="options" :class="{ active: menuId == item.id }" @click="openMenu(item.id)" />
+      <options
+        class="options"
+        :class="{ active: menuId == item.id }"
+        @click="openMenu(item.id)"
+      />
       <transition name="slide">
         <div v-if="menuId == item.id" class="options-menu bg_white">
           <div class="edit" @click="editItem(item.id)">
@@ -30,7 +39,7 @@
             <add />
             <p>
               Добавить
-              <span v-if="currentListId=='goals'">задачу</span>
+              <span v-if="currentListId == 'goals'">задачу</span>
               <span v-else>задание</span>
             </p>
           </div>

@@ -2,11 +2,11 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        prependData: `@import "@/assets/scss/_setting.scss";`,
-      },
-    },
+        prependData: `@import "@/assets/scss/_setting.scss";`
+      }
+    }
   },
-  chainWebpack: (config) => {
+  chainWebpack: config => {
     const svgRule = config.module.rule("svg");
 
     svgRule.uses.clear();
@@ -18,5 +18,5 @@ module.exports = {
       .use("vue-svg-loader")
       .loader("vue-svg-loader");
   },
-  publicPath: process.env.NODE_ENV === "production" ? "/sw_example/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/sw_example/" : "/"
 };

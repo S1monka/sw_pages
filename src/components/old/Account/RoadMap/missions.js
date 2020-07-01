@@ -44,7 +44,7 @@ const missions = [
               {
                 name: "Задание #3",
                 id: 1123
-              },
+              }
             ]
           },
           {
@@ -58,7 +58,7 @@ const missions = [
               {
                 name: "Задание №2",
                 id: 1132
-              },
+              }
             ]
           }
         ]
@@ -82,7 +82,7 @@ const missions = [
               {
                 name: "Задание #3",
                 id: 1213
-              },
+              }
             ]
           },
           {
@@ -106,7 +106,7 @@ const missions = [
                 id: 1224
               }
             ]
-          },
+          }
         ]
       }
     ]

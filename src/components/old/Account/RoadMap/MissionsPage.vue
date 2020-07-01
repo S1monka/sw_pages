@@ -14,14 +14,23 @@
           <input
             v-if="editId == item.id"
             @blur="editId = -1"
-            @keyup.enter="() => {editId = -1; item.name = $event.target.value }"
+            @keyup.enter="
+              () => {
+                editId = -1;
+                item.name = $event.target.value;
+              }
+            "
             :value="item.name"
             ref="input"
             class="cl_purple-1"
           />
           <h6 v-else>{{ item.name }}</h6>
         </div>
-        <options class="options" :class="{ active: menuId == item.id }" @click="openMenu(item.id)" />
+        <options
+          class="options"
+          :class="{ active: menuId == item.id }"
+          @click="openMenu(item.id)"
+        />
         <transition name="slide">
           <div v-if="menuId == item.id" class="options-menu bg_white">
             <div class="edit" @click="editItem(item.id)">

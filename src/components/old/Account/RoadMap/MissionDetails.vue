@@ -3,8 +3,8 @@
     <div class="mission-name bg_white cl_purple-1">
       <edit class="edit" />
       <p>
-        <strong>Миссия №{{missionData.id}}</strong>
-        - {{missionData.name}}
+        <strong>Миссия №{{ missionData.id }}</strong>
+        - {{ missionData.name }}
       </p>
       <exit class="exit" @click="$router.push('/old/account/road_map')" />
     </div>
